@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meme.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+<div class="page-container">
+    <h1>Dank Meme Generator</h1>
+    <hr>
+ <form class="form-submit">
+    <!-- image input -->
+        <label for="image">Select an Image</label>
+        <input type="text" class="imageInput" placeholder="Paste url or choose file">
+
+    <!-- top input -->
+  
+        <label for="topInput" class="topInput">Top Text</label>
+        <input type="text" class="topInput">
+  
+    <!-- bottom input -->
+ 
+        <label for="bottomInput">Bottom Text</label>
+        <input type="text" class="bottomInput">
+  
+    <input class="submit" type="submit">
+</form>
+    <!-- div containers -->
+    <canvas class="memeCanvas"></canvas>
+</div>
+<script src="meme2.js"></script>
+</body>
+</html>

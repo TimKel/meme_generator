@@ -1,0 +1,46 @@
+.page-container{
+    background-color: lemonchiffon;
+    width: 100vw;
+    height: 100%;
+    border: none;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+}
+hr{
+    width: 85%;
+    color: white;
+    background-color: white;
+    border: 2px white solid;
+}
+
+.form-submit{
+    display: block;
+    margin-left: 30%;
+}
+.imageInput{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.topInput{
+    display: block;
+    margin: 5px;
+}
+.bottomInput{
+    display: block;
+    margin: 5px;
+}
+.submit{
+    display: block;
+    margin: 5px;
+}
+
+
+.memeCanvas{
+    background-color: rgb(211, 211, 211, .1);
+    
+    width: 100%;
+    height: 400px;
+}
