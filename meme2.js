@@ -24,7 +24,7 @@ form.addEventListener('submit', function(e){
 });
 
 canvas.addEventListener('click', function(e){
-    if (e.target.tagName === 'CANVAS'){
+    if (e.target.className === 'delete'){
         e.target.parentElement.remove();
     }
 });
@@ -40,29 +40,30 @@ const createMemeDiv = () => {
 
     // Add image src and set as background
 
-    const urlInput = document.querySelector('.imageInput');
+    const urlInput = document.querySelector('#imageInput');
     const memeImg = document.createElement('img');
     memeImg.className = 'img';
-    memeImg.setAttribute('src', urlInput);
+    memeImg.setAttribute('src', urlInput.value);
 
     // Add top text and classname
 
-    const topInput = document.querySelector('.topInput');
+    const topInput = document.querySelector('#topInput');
     const topText = document.createElement('h2');
     topText.className = 'top';
-    topText.innerText = topInput;
+    topText.innerText = topInput.value;
 
     // Add bottom text and classname
 
     const bottomText = document.createElement('h2');
-    const bottomInput = document.querySelector('.bottomInput');
+    const bottomInput = document.querySelector('#bottomInput');
     bottomText.className = 'bottom';
-    bottomText.innerText = bottomInput;
+    bottomText.innerText = bottomInput.value;
 
     //append to meme div
     meme.appendChild(memeImg);
     meme.appendChild(topText);
     meme.appendChild(bottomText);
+    
 };
 //reference
 // const form = document.querySelector('.form')

@@ -1,13 +1,22 @@
 .page-container{
     background-color: lemonchiffon;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     border: none;
     display: inline-block;
+    margin: 0 auto;
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 h1{
     text-align: center;
+    height: 15%;
+    background-color: rgb(250, 233, 85);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 5%;
+    font-size: 4rem;
+
 }
 hr{
     width: 85%;
@@ -18,29 +27,70 @@ hr{
 
 .form-submit{
     display: block;
-    margin-left: 30%;
+    margin-left: 45%;
 }
-.imageInput{
-    display: inline-block;
+
+#imageInput{
+    display: block;
     margin-bottom: 20px;
 }
-.topInput{
+#topInput{
+    display: block;
+    margin: 5px;
+   
+}
+#bottomInput{
     display: block;
     margin: 5px;
 }
-.bottomInput{
-    display: block;
-    margin: 5px;
-}
+
 .submit{
     display: block;
     margin: 5px;
 }
 
+.img{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 2px solid black;
+}
+.top{
+    position: relative;
+    bottom: 520px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.bottom{
+    position: relative;
+    bottom: 170px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.delete{
+    position: relative;
+    bottom: 483px;
+    left: 499px;
+    background-color: rgb(202, 202, 202);
+    padding: 2px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.delete:hover{
+    background-color: gray;;
+}
 
 .memeCanvas{
     background-color: rgb(211, 211, 211, .1);
-    
-    width: 100%;
-    height: 400px;
+    position: relative;
+    align-self: center;
+    width: 400px;
+    display: flex;
 }
